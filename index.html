@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <title>STARTER - House Plants Guide</title>
-    <body>
-        <header>
-            <h1>House plants that even you cannot kill.</h1>
-            <form class="feedbackForm">
-                <!-- WRITE YOUR INPUT MARK UP HERE -->
-                <!-- toggle switch one -->
-                <input type="checkbox" id="alive-switch">
-                <label for="alive-switch">Terrible at keepin plants alvie</label>
 
-                <!-- toggle switch two -->
-                <input type="checkbox" id="water-switch">
-                <label for="water-switch"> Watering seems optional?</label>
-                
-                <!-- toggle switch three -->
-                <input type="checkbox" id="thumb-switch">
-                <label for="thumb-switch">Two Black Thumbs?</label>
+<body>
+    <header>
+        <h1>House plants that even you cannot kill.</h1>
+        <form class="feedbackForm">
+            <!-- WRITE YOUR INPUT MARK UP HERE -->
+            <!-- toggle switch one -->
+            <input type="checkbox" id="alive-switch">
+            <label for="alive-switch">Terrible at keepin plants alvie</label>
 
-                <button>Find Plants</button>
-            </form>
-        </header>
+            <!-- toggle switch two -->
+            <input type="checkbox" id="water-switch">
+            <label for="water-switch"> Watering seems optional?</label>
 
-        <main>
-            <div class="tabs">
-                <!-- Our "tabs" are actually goin to be radio button -->
+            <!-- toggle switch three -->
+            <input type="checkbox" id="thumb-switch">
+            <label for="thumb-switch">Two Black Thumbs?</label>
 
-                <!-- tab one -->
-                <input type="radio" id="spider-tab" name="tabs" checked>
-                <label for="spider-tab">Spider Plant <i class="fas fa-angle-double-down" aria-hidden="true"></i></label>
-                <!-- tab two -->
-                <input type="radio" id="snake-tab" name="tabs">
-                <label for="snake-tab">Snake Plant <i class="fas fa-angle-double-down" aria-hidden="true"></i></label>
-                <!-- tab three -->
-                <input type="radio" id="philo-tab" name="tabs">
-                <label for="philo-tab">Philodendron<i class="fas fa-angle-double-down" aria-hidden="true"></i></label>
-            </div>
+            <button>Find Plants</button>
+        </form>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <!-- Our "tabs" are actually goin to be radio button -->
+
+            <!-- Tab One -->
+            <input type="radio" id="spider-tab" name="tabs" checked>
+            <label for="spider-tab">Spider Plant<i class="fas fa-angle-double-down" aria-hidden="true"></i>
+            </label>
+
+            <!-- Tab Two -->
+            <input type="radio" id="snake-tab" name="tabs">
+            <label for="snake-tab">Snake Plant<i class="fas fa-angle-double-down" aria-hidden="true"></i>
+            </label>
+
+            <!-- Tab Three -->
+            <input type="radio" id="philo-tab" name="tabs">
+            <label for="philo-tab">Philodendron<i class="fas fa-angle-double-down" aria-hidden="true"></i>
+            </label>
+
 
             <!-- First Plant -->
             <div class="firstPlant plantContent" id="firstPlant">
-                <div class="imgContainer">
+                <figure class="imgContainer">
                     <img src="./assets/spiderPlant.jpg" alt="A spider plant">
-                </div><!-- .imgContainer -->
+                </figure><!-- .imgContainer -->
             
-                <div class="plantDescription">
+                <figcaption class="plantDescription">
                     <p>Chlorophytum comosum, often called spider plant but also known as airplane plant, St. Bernard's lily, spider
                         ivy, ribbon plant, and hen and chickens is a species of perennial flowering plant. It is native to tropical
                         and southern Africa, but has become naturalized in other parts of the world, including western Australia.
@@ -68,17 +75,17 @@
                             C. comosum 'Variegatum' has darker green leaves with white margins.
                         </li>
                     </ul>
-                </div><!-- .plantDescription -->
+                </figcaption><!-- .plantDescription -->
             </div><!-- .firstPlant -->
             
             <!-- Second Plant -->
             <div class="secondPlant plantContent" id="secondPlant">
             
-                <div class="imgContainer">
+                <figure class="imgContainer">
                     <img src="./assets/snakePlant.jpg" alt="A Snake Plant">
-                </div><!-- .imgContainer -->
+                </figure><!-- .imgContainer -->
             
-                <div class="plantDescription">
+                <figcaption class="plantDescription">
                     <p>It is an evergreen perennial plant forming dense stands, spreading by way of its creeping rhizome, which is
                         sometimes above ground, sometimes underground. Its stiff leaves grow vertically from a basal rosette. Mature
                         leaves are dark green with light gray-green cross-banding and usually range from 70–90 centimetres (28–35
@@ -88,16 +95,16 @@
                         in cooler climates. It is popular as a houseplant because it is tolerant of low light levels and irregular
                         watering; during winter it needs only one watering every couple of months. It will rot easily if
                         overwatered.</p>
-                </div><!-- .plantDescription -->
-            </div>
+                </figcaption><!-- .plantDescription -->
+            </div><!-- .secondPlant -->
             
             <!-- Third Plant -->
             <div class="thirdPlant plantContent" id="thirdPlant">
-                <div class="imgContainer">
+                <figure class="imgContainer">
                     <img src="./assets/philedendron.jpg" alt="Philodendron Plant">
-                </div><!-- .imgContainer -->
+                </figure><!-- .imgContainer -->
             
-                <div class="plantDescription">
+                <figcaption class="plantDescription">
                     <p>Philodendron is a large genus of flowering plants in the Araceae family. As of September 2015, the World
                         Checklist of Selected Plant Families accepted 489 species; other sources accept different numbers.
                         Regardless of number of species, the
@@ -111,8 +118,32 @@
                         <li>Philodendron auriculatum</li>
                         <li>Philodendron balaoanum</li>
                     </ul>
-                </div><!-- .plantDescription -->
+                </figcaption><!-- .plantDescription -->
             </div><!-- .thirdPlant -->
-        </main>
-    </body>
+            <div class="photoGallery">
+                <h2> Show your favorite plants!</h2>
+                <div class="photoGalleryContainer">
+                    <div class="photoGalleryItem">
+                        <img src="./assets/hibiscus.jpeg" alt="photo of a hibiscus">
+                    </div>
+                    <div class="photoGalleryItem">
+                        <img src="./assets/pink-orchids.jpeg" alt="photo of a pink orchid">
+                    </div>
+                    <div class="photoGalleryItem">
+                        <img src="./assets/sunflower.jpeg" alt="photo of a sunflower">
+                    </div>
+                    <div class="photoGalleryItem">
+                        <img src="./assets/indoor-tropical-plants.jpeg" alt="photo of a group of indoor plants">
+                    </div>
+                    <div class="photoGalleryItem">
+                        <img src="./assets/birds-of-paradise.jpeg" alt="a bird of paradise plant">
+                    </div>
+                    <div class="photoGalleryItem">
+                        <img src="./assets/easter-lilies.jpeg" alt="photo of a easter lilly">
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+
 </html>
