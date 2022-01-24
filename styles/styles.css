@@ -146,7 +146,7 @@ Orange - #ED6B55
 
 
  /* > direct children only no grandchild */
- .plantContent > div {
+ .content > div {
      display: none;
      padding: 20px;
  }
@@ -154,15 +154,17 @@ Orange - #ED6B55
  /* if spider-tab is checked then display firstPlant */
 
   
-#spider-tab:checked ~ .plantContent .firstPlant, #snake-tab:checked ~ .plantContent .secondPlant, #philo-tab:checked ~ .plantContent .thirdPlant {
+#spider-tab:checked ~ .content .firstPlant,
+#snake-tab:checked ~ .content .secondPlant,
+#philo-tab:checked ~ .content .thirdPlant {
      display: block;
  }
 
 
- /* .tabs input[type="radio"] {
+ .tabs input[type="radio"] {
      opacity: 0;
      position: absolute;
- } */
+ }
 
  .tabs label:hover {
      color: white;
@@ -194,9 +196,9 @@ Orange - #ED6B55
     .feedbackForm {
         width: 75%;
     }
-    /* .tabs label {
+    .tabs label {
         display: inline-block;
-    } */
+    }
     .tabs label .fa-angle-double-down {
         right: 0px;
     }
@@ -210,9 +212,11 @@ Orange - #ED6B55
     .feedbackForm {
         width: 65%;
     }
-    #spider-tab:checked ~ .plantContent .firstPlant, #snake-tab:checked ~ .plantContent .secondPlant #philo-tab:checked ~ .plantContent .thirdPlant {
-     display: flex;
- }
+    #spider-tab:checked ~ .content .firstPlant,
+    #snake-tab:checked ~ .content .secondPlant,
+    #philo-tab:checked ~ .content .thirdPlant {
+        display: flex;
+    }
     .imgContainer {
         width: 50%;
         margin-right: 25px;
